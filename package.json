@@ -1,0 +1,52 @@
+{
+  "name": "trailshare",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "description": "TrailShare / 旅迹信物 — 以照片为信物的可验证社会记忆",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "e1": "tsx src/experiments/e1_privacy.ts",
+    "e2": "tsx src/experiments/e2_faithfulness.ts",
+    "e3": "tsx src/experiments/e3_ablation.ts",
+    "e4": "tsx src/experiments/e4_multihop.ts",
+    "exp": "tsx src/experiments/run_all.ts"
+  },
+  "dependencies": {
+    "@noble/curves": "^2.4.0",
+    "@noble/ed25519": "^2.1.0",
+    "@noble/hashes": "^1.4.0",
+    "idb": "^8.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.0",
+    "dotenv": "^18.0.8",
+    "fake-indexeddb": "^6.2.6",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0",
+    "vite": "^5.4.0",
+    "vitest": "^2.0.0"
+  },
+  "files": [
+    "src/",
+    "public/",
+    "tests/",
+    "index.html",
+    "package.json",
+    "package-lock.json",
+    "tsconfig.json",
+    "vite.config.ts",
+    "README.md",
+    "QUICKSTART.md",
+    ".env.example",
+    ".gitignore",
+    "docs/",
+    "start.bat",
+    "start.command",
+    "start.sh"
+  ]
+}
